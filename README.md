@@ -1,5 +1,11 @@
-# GradKit
-**Your Intelligent Career Growth Companion**
+<div align="center">
+
+# GradKit  
+**Your AI  Growth Companion**
+
+<img src="https://c.tenor.com/4RYbGa1GttQAAAAC/lofi-browsing.gif" width="400"/>
+
+</div>
 
 GradKit is a modern platform that helps learners and professionals stay industry-ready through AI-driven insights, mock interviews, and automated career tools.
 
@@ -30,4 +36,3 @@ GradKit is a modern platform that helps learners and professionals stay industry
 | **Frontend** | Next.js 14, React 18, Tailwind CSS, Shadcn UI |
 | **Backend** | Neon DB (PostgreSQL), Gemini API |
 | **Security** | Clerk Authentication |
-
