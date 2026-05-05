@@ -31,10 +31,3 @@ GradKit is a modern platform that helps learners and professionals stay industry
 | **Backend** | Neon DB (PostgreSQL), Gemini API |
 | **Security** | Clerk Authentication |
 
----
-
-## 🚀 Quick Start
-
-1. **Clone the repo**
-   ```bash
-   git clone [https://github.com/your-username/gradkit.git](https://github.com/your-username/gradkit.git)
