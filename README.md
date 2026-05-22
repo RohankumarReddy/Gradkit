@@ -1,9 +1,11 @@
 <div align="center">
 
-# GradKit  
-**Your AI  Growth Companion**
+# GradKit
+**Your AI Growth Companion**
 
 <img src="https://c.tenor.com/4RYbGa1GttQAAAAC/lofi-browsing.gif" width="400"/>
+
+[View Project Demostration](https://drive.google.com/file/d/1rhvU6J7Njt9qWUg1xRtlAM1P_I5Ba3i3/view?usp=sharing)
 
 </div>
 
