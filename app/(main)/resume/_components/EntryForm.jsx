@@ -201,29 +201,7 @@ export function EntryForm({ type, entries, onChange }) {
             </div>
 
             <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <label className="text-xs font-bold text-gray-400 uppercase">Description</label>
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="sm"
-                  className="h-8 text-blue-400 hover:text-blue-300 hover:bg-blue-400/10"
-                  onClick={handleImproveDescription}
-                  disabled={isImproving || !watch("description")}
-                >
-                  {isImproving ? (
-                    <>
-                      <Loader2 className="h-3 w-3 mr-2 animate-spin" />
-                      Optimizing...
-                    </>
-                  ) : (
-                    <>
-                      <Sparkles className="h-3 w-3 mr-2" />
-                      Improve with AI
-                    </>
-                  )}
-                </Button>
-              </div>
+              <label className="text-xs font-bold text-gray-400 uppercase">Description</label>
               <Textarea
                 placeholder={`Describe your achievements and responsibilities...`}
                 className="min-h-[140px] bg-gray-900/50 border-gray-600 focus:border-blue-500 text-white leading-relaxed"
@@ -233,6 +211,7 @@ export function EntryForm({ type, entries, onChange }) {
             </div>
           </CardContent>
 
+          {/* Footer now holds both actions together: Improve with AI + Save Entry */}
           <CardFooter className="flex justify-end space-x-3 bg-gray-900/20 border-t border-gray-700/50 py-4">
             <Button
               type="button"
@@ -245,8 +224,27 @@ export function EntryForm({ type, entries, onChange }) {
             >
               Cancel
             </Button>
-            <Button 
-              type="button" 
+            <Button
+              type="button"
+              variant="outline"
+              className="text-blue-400 border-blue-500/30 hover:bg-blue-400/10 hover:text-blue-300"
+              onClick={handleImproveDescription}
+              disabled={isImproving || !watch("description")}
+            >
+              {isImproving ? (
+                <>
+                  <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                  Optimizing...
+                </>
+              ) : (
+                <>
+                  <Sparkles className="h-4 w-4 mr-2" />
+                  Improve with AI
+                </>
+              )}
+            </Button>
+            <Button
+              type="button"
               onClick={handleAdd}
               className="bg-blue-600 hover:bg-blue-500 text-white px-6 font-bold"
             >

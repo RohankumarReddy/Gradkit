@@ -13,6 +13,8 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { FileSearch } from "lucide-react";
+
 import {
   PenBox,
   LayoutDashboard,
@@ -66,6 +68,15 @@ const Header = async() => {
                   <Link href="/resume" className="flex items-center gap-2">
                     <FileText className="h-4 w-4" />
                     Build Resume
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link
+                    href="/analyzeResumeATS "
+                    className="flex items-center gap-2 "
+                  >
+                    <FileSearch className="h-4 w-4" />
+                    Resume Review
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
