@@ -1,4 +1,4 @@
-import { Brain, MessageSquare, BarChart3, FileBadge2,Library } from "lucide-react";
+import { Brain, MessageSquare, BarChart3, FileBadge2,Library,FileSearch } from "lucide-react";
 
 export const features = [
   {
@@ -40,6 +40,14 @@ export const features = [
   title: "AI Learning Feed",
   description:
     "Get a personalized feed of high-quality learning resources tailored to your skills, industry, and interests.",
+},
+  {
+  icon: (
+    <FileSearch className="w-12 h-12 mb-4 text-blue-500 dark:text-blue-400 transition-transform duration-300 group-hover:scale-110" />
+  ),
+  title: "Professional Resume Review",
+  description:
+    "Get expert feedback on your resume to improve your chances of landing your dream job.",
 },
 
 
